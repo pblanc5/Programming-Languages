@@ -1,0 +1,8 @@
+The number {% (c) print x %} is a random number between 1 and 6
+inclusive. If we multiply it by 2, we get {% (d) print 2*x %}.
+
+What's interesting is that the statements may appear out of order in the
+document. {% (a) import random %} Thus I might generate the random
+number in a location in the document well after referencing it.
+{% (b) x = random.randint(1,6) %}.
+In one {% (e) print x %} and {% (f) print x %} three {% (g) print "hello" %} line.
